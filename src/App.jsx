@@ -1,8 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Form from "./components/form.js";
+import Weather from "./components/weather.js";
 
 class App extends React.Component {
   render() {
-    return <h1>Welcome Fronted Group , This is where your team will be displaying your App </h1>
+    return (
+      <div>
+      <h1>WEATHER BUG</h1>
+      <p>white hatz</p>
+      <Form />
+      <Weather />
+      </div>
+    );
   }
 }
 
