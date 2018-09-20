@@ -16,9 +16,32 @@ class App extends React.Component {
     }
     this.getWeather = this.getWeather.bind(this);
   }
-  async getWeather(){
-    const api_call = await fetch (`http://api.openweathermap.org/data/2.5/weather?q=mexico%20city,mexico&appid=3fbfd8c87b4e4744d88dc15f94887a67&units=amperial`)
+  async getWeather(e){
+    e.preventDefault();
+    const city = e.target.elements.city.value;
+    const country = e.target.elements.country.value;
+    const api_call = await fetch (`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=3fbfd8c87b4e4744d88dc15f94887a67&units=amperial`);
     const data = await  api_call.json();
+    if(city && country){
+      this.setState({
+        country: data.sys.country,
+        city: data.name,
+        temperature: data.main.temp,
+        humidity: data.main.humidity,
+        description: data.Weather[0].description,
+        error: ""
+
+      });
+    }else{
+      this.setState({
+        country: undefined,
+        city: undefined,
+        temperature: undefined,
+        humidity: undefined,
+        description: undefined,
+        error: "PLEASE TRY AGAIN"
+      });
+    }
   }
 
   render() {
