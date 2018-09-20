@@ -1,12 +1,9 @@
 import React from 'react';
 
-class Weather extends React.Component{
-  render(){
-    return(
-      <div>
-      weather Component
+const Form = props =>(
+      <div className="ifo">
+      weather
       </div>
     );
-  }
-};
+
 export default Weather;
