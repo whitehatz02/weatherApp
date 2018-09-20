@@ -47,7 +47,7 @@ class App extends React.Component {
   render() {
     return(  <div>
       <h1>WEATHER BUG</h1>
-     <p>white hatz</p>
+     <p>White Hatz</p>
      <Form getWeather = {this. getWeather}/>
      <Weather
        country= {this.state.country}
@@ -57,7 +57,6 @@ class App extends React.Component {
        description= {this.state.description}
        error= {this.state.error}
        />
-
     </div>
 )
   }
