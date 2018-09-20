@@ -7,9 +7,17 @@ background-size: cover;
 }
 
 h1{
+  font-family: "impact";
   color:red;
+  text-decoration: underline;
+
 }
 
 p{
   color:yellow;
+}
+
+.translate{
+  margin-right: 75vw;
+  margin-top: 20vw;
 }
