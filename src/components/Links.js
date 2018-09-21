@@ -1,16 +1,19 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import Videos from "./Videos"
 
-const Links = () => (
- <div className="links">
+const Links = () => {
+  return (
+<div>
+ <nav className="headerStyle">
  <ul>
-       <li>
-         <Link to="/weather">weather</Link>
-       </li>
-       <li>
-         <Link to="/videos">videos</Link>
-       </li>
+
+         <NavLink to="/">weather</NavLink>
+
+         <NavLink to="/Videos">Videos</NavLink>
      </ul>
+    </nav>
  </div>
-);
+ );
+}
 export default Links;

@@ -1,28 +1,25 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Links from "./components/Links";
-import videos from "./components/videos";
+import { BrowserRouter, Route, Switch, NavLink} from "react-router-dom";
+
+//import Links from "./components/Links";
+import Videos from "./components/Videos";
 import App from './App.jsx'
 import './index.css'
+//import weather from "./components/weather";
 
 class Index extends React.Component {
      render() {
        return(
          <BrowserRouter>
            <div>
-
-                <Links />
-
                 <Switch>
-                    <Route exact path ="/" components={App}/>
-                    <Route path="/videos" component = {videos}/>
+                    <Route exact path ="/" component= {App} />
+                    <Route path="/videos" component = {Videos} />
                  </Switch>
            </div>
          </BrowserRouter>
-       )
-     }
+       )};
+};
 
-}
-
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<Index />, document.getElementById('root'))
