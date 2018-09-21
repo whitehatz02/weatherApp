@@ -72,6 +72,7 @@ class App extends React.Component {
         weather news
         </Link>
       </button>
+
     </div>
   </div>
 )
