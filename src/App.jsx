@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from "./components/form.js";
 import Weather from "./components/weather.js";
-
+import Videos from "./components/videos.js"
 
 class App extends React.Component {
   constructor(props){
@@ -57,10 +57,10 @@ class App extends React.Component {
        description= {this.state.description}
        error= {this.state.error}
        />
-
+     <Videos />
     </div>
 )
   }
 }
 
-export default App
+export default App;
