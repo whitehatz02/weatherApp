@@ -6,17 +6,9 @@ const Form = props =>(
           <form onSubmit= {props.getWeather}>
             <input className= "form" type="text" name="city" placeholder="state" />
 
-  <form onSubmit= {props.getWeather}>
-      <input className= "form" type="text" name="city" placeholder="state"/>
+            <input className="form" type="text" name="country" placeholder="country" />
 
- 
-      <input className="form" type="text" name="country" placeholder="country" />
-
-            <button className="btn">Submit</button>
-        </form>
- 
-
-   <button className="btn">Check Weather</button>
+            <button className="btn">Check Weather</button>
  </form>
 
   );
