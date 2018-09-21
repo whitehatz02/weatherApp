@@ -1,7 +1,9 @@
 import React from 'react'
+import { Route, Link } from "react-router-dom";
 import Form from "./components/form.js";
 import Weather from "./components/weather.js";
-
+//import Videos from "./components/Videos.js"
+//import Links from "./components/Links.js"
 
 class App extends React.Component {
   constructor(props){
@@ -46,8 +48,15 @@ class App extends React.Component {
 
   render() {
     return(  <div>
-      <h1 align="center">WEATHER BUG</h1>
+
+      <h1 align="center">
+        WEATHER BUG
+      </h1>
      <p align="center">Find Out The Temperature, Weather Conditons and More....</p>
+        
+      <h1 className="bug rainbow">"WEATHER BUG"</h1>
+     <p className="weatherinfo rainbow">Find Out The Temperature, Weather Conditons and More....</p>
+
      <Form getWeather = {this. getWeather}/>
      <Weather
        country= {this.state.country}
@@ -57,9 +66,17 @@ class App extends React.Component {
        description= {this.state.description}
        error= {this.state.error}
        />
+     <div>
+      <button>
+        <Link to="/videos">
+        weather news
+        </Link>
+      </button>
+
     </div>
+  </div>
 )
-  }
+}
 }
 
-export default App
+export default App;

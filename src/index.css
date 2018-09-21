@@ -1,23 +1,118 @@
+/*background image*/
 body{
-background-image: url("https://media1.giphy.com/media/VMVpwj0jtCEYo/giphy.gif");
+background-image: url("https://media2.giphy.com/media/l0ExvMGqMPtMGHU4w/giphy.gif");
 background-repeat: no-repeat;
 background-image: center;
 background-size: cover;
 
 }
-
+/*head line*/
 h1{
   font-family: "impact";
-  color:red;
+  color:#703610;
   text-decoration: underline;
-
+text-shadow: 3px 2px #f4843a;
+ font-style: oblique;
+ font-size: 70px;
+ text-align: center;
 }
+/*this is for yhr weather information below the search bar*/
 
-p{
-  color:yellow;
+.info{
+  color:#ffff;
+  font-size: 27px;
+text-shadow: 6px 4px #703610;
 }
-
+/*the translate*/
 .translate{
   margin-right: 75vw;
   margin-top: 20vw;
+
+}
+/*the search button*/
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #703610;
+  background-color: #f4843a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px #703610;
+}
+
+.btn:hover {background-color: #f7f7f7}
+
+.btn:active {
+  background-color: #ef7b07;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*the weather props*/
+.weatherinfo{
+  text-align: center;
+font-size: 37px;
+text-shadow: 3px 2px #703610;
+}
+/*the city/country boxes*/
+.form{
+  width: 20%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+
+}
+/*the change of colors for the headline*/
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 3s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow 3s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow 3s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}
+
+	40%{color: yellow;}
+	10%{color: white;}
+	100%{color: blue;}
+	100%{color: orange;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+  0%{color: orange;}
+
+	40%{color: yellow;}
+	10%{color: white;}
+	100%{color: blue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  0%{color: orange;}
+
+	40%{color: yellow;}
+	10%{color: white;}
+	100%{color: blue;}
+	100%{color: orange;}
+}
+
+/*hover mouse*/
+ input:focus, input:hover, label:hover {
+
+  cursor: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiICAgd2lkdGg9IjM4IiAgIGhlaWdodD0iNTAiICAgaWQ9Ik1hbm8iICAgdmVyc2lvbj0iMS4wIiAgIGlua3NjYXBlOnZlcnNpb249IjAuOTEgcjEzNzI1IiAgIHNvZGlwb2RpOmRvY25hbWU9ImN1cnNvci5zdmciPiAgPGRlZnMgICAgIGlkPSJkZWZzMTAiIC8+ICA8c29kaXBvZGk6bmFtZWR2aWV3ICAgICBwYWdlY29sb3I9IiNmZmZmZmYiICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIgICAgIGJvcmRlcm9wYWNpdHk9IjEiICAgICBvYmplY3R0b2xlcmFuY2U9IjEwIiAgICAgZ3JpZHRvbGVyYW5jZT0iMTAiICAgICBndWlkZXRvbGVyYW5jZT0iMTAiICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMCIgICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjE5MjAiICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDE3IiAgICAgaWQ9Im5hbWVkdmlldzgiICAgICBzaG93Z3JpZD0iZmFsc2UiICAgICBpbmtzY2FwZTp6b29tPSI4LjU4MTgxODIiICAgICBpbmtzY2FwZTpjeD0iNzAuNTczMjAyIiAgICAgaW5rc2NhcGU6Y3k9IjEyLjMzOTc0IiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIgICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9Ik1hbm8iIC8+ICA8bWV0YWRhdGEgICAgIGlkPSJNZXRhZGF0YSI+ICAgIDxyZGY6UkRGPiAgICAgIDxjYzpXb3JrICAgICAgICAgcmRmOmFib3V0PSIiPiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+ICAgICAgICA8ZGM6dHlwZSAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4gICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPiAgICAgIDwvY2M6V29yaz4gICAgPC9yZGY6UkRGPiAgPC9tZXRhZGF0YT4gIDxnICAgICBpZD0iZzQiICAgICB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMC4wMDk0MDM5LDEuMDE2NDU2OCwtNC4xNzU4NTE4LC0zOTYuNzY2NDIpIj4gICAgPHBhdGggICAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIgICAgICAgZD0ibSAwLDQxMC43MTE3MyA2Ljc1ODgyMjQsMCAwLDIuMjUzIDIuMjUyOTQ0MywwIDAsLTIwLjI3NjQ2IDIuMjUyOTM0MywwIDAsLTIuMjUyOTkgNC41MDU4OTgsMCAwLDIuMjUyOTkgMi4yNTI5MjIsMCAwLDkuMDExNzMgNC41MDU4ODYsMCAwLDIuMjUyOTkgNi43NTg4MjQsMCAwLDIuMjUzIDQuNTA1ODY5LDAgMCwyLjI1MjgxIDIuMjUyOTM4LDAgMCwyLjI1MjkzIDIuMjUyOTYyLDAgMCwxNS43NzA1OCAtMi4yNTI5NjIsMCAwLDYuNzU4ODkgLTIuMjUyOTM4LDAgMCw2Ljc1ODggLTIyLjUyOTM5OSwwIDAsLTYuNzU4OCAtMi4yNTI5MzQzLDAgMCwtNC41MDU5MyAtMi4yNTI5NDQzLDAgMCwtNC41MDU4NCAtMi4yNTI5Mzk3LDAgMCwtNC41MDU5MSAtMi4yNTI5NDIsMCAwLC0yLjI1Mjk1IC0yLjI1Mjk0MDcsMCAwLC02Ljc1ODg0IHoiICAgICAgIGlkPSJOaWdyYUJvcmRlcm8iICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiIC8+ICAgIDxwYXRoICAgICAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiICAgICAgIGQ9Im0gMi4yNTI5NDA3LDQxMi45NjQ3MyA0LjUwNTg4MTcsMCAwLDIuMjUyOTYgMi4yNTI5NDQzLDAgYyAwLDAgMCw2Ljc1ODc5IDAsNi43NTg3OSBsIDIuMjUyOTM0MywwIDAsLTI5LjI4ODIxIDQuNTA1ODk4LDAgMCwyMC4yNzY0NiAyLjI1MjkyMiwwIDAsLTkuMDExNzQgNC41MDU4ODYsMCAwLDkuMDExNzQgMi4yNTI5NCwwIDAsLTYuNzU4NzQgNC41MDU4ODQsMCAwLDkuMDExNyAyLjI1Mjk0MiwwIDAsLTYuNzU4ODkgMi4yNTI5MjcsMCAwLDIuMjUyOTMgMi4yNTI5MzgsMCAwLDE1Ljc3MDU4IC0yLjI1MjkzOCwwIDAsNi43NTg4OSAtMi4yNTI5MjcsMCAwLDQuNTA1ODEgLTE4LjAyMzUyMywwIDAsLTQuNTA1ODEgLTIuMjUyOTQ5LDAgMCwtNC41MDU5MyAtMi4yNTI5MzQzLDAgMCwtNC41MDU4NCAtMi4yNTI5NDQzLDAgMCwtNC41MDU5MSAtMi4yNTI5Mzk3LDAgMCwtMi4yNTI5NSAtMi4yNTI5NDIsMCAwLC00LjUwNTg0IHoiICAgICAgIGlkPSJCbGFua2FJbnRlcm8iICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiIC8+ICA8L2c+PC9zdmc+), auto;
+}
+Form{
+   text-align: center;
 }
