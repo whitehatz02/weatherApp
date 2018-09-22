@@ -1,6 +1,6 @@
 /*background image*/
 body{
-background-image: url("https://media2.giphy.com/media/l0ExvMGqMPtMGHU4w/giphy.gif");
+background-image: url("http://footage.framepool.com/shotimg/qf/974783708-%E7%99%BD%E8%89%B2-%E4%BA%91-%E5%A4%A9%E7%A9%BA-%E7%BE%8E%E5%9B%BD.jpg");
 background-repeat: no-repeat;
 background-image: center;
 background-size: cover;
@@ -9,9 +9,9 @@ background-size: cover;
 /*head line*/
 h1{
   font-family: "impact";
-  color:#703610;
+  color:#a02b2b;
   text-decoration: underline;
-text-shadow: 3px 2px #f4843a;
+text-shadow: 3px 2px #cc9298;
  font-style: oblique;
  font-size: 70px;
  text-align: center;
@@ -19,9 +19,10 @@ text-shadow: 3px 2px #f4843a;
 /*this is for yhr weather information below the search bar*/
 
 .info{
-  color:#ffff;
+  color:yellow;
   font-size: 27px;
-text-shadow: 6px 4px #703610;
+text-shadow: 3px 2px brown;
+font-weight: bold;
 }
 /*the translate*/
 .translate{
@@ -43,11 +44,11 @@ text-shadow: 6px 4px #703610;
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #703610;
-  background-color: #f4843a;
+  color: black;
+  background-color: #357ab7;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 6px #703610;
+  box-shadow: 0 6px #004684;
 }
 
 .btn:hover {background-color: #f7f7f7}
@@ -61,7 +62,8 @@ text-shadow: 6px 4px #703610;
 .weatherinfo{
   text-align: center;
 font-size: 37px;
-text-shadow: 3px 2px #703610;
+text-shadow: 3px 2px black;
+color:#4ec45a;
 }
 /*center the info boxes*/
 Form{
@@ -90,31 +92,28 @@ Form{
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rainbow{
-  0%{color: orange;}
 
-	40%{color: yellow;}
-	10%{color: white;}
+
 	100%{color: blue;}
-	100%{color: orange;}
+	100%{color: white;}
+	100%{color: blue;}
 }
 /* Internet Explorer */
 @-ms-keyframes rainbow{
-  0%{color: orange;}
 
-	40%{color: yellow;}
-	10%{color: white;}
+
+	1000%{color: blue;}
+	100%{color: white;}
 	100%{color: blue;}
-	100%{color: orange;}
 }
 
 /* Standar Syntax */
 @keyframes rainbow{
-  0%{color: orange;}
 
-	40%{color: yellow;}
-	10%{color: white;}
+
 	100%{color: blue;}
-	100%{color: orange;}
+	100%{color: white;}
+	100%{color: blue;}
 }
 
 /*hover mouse*/

@@ -49,8 +49,8 @@ class App extends React.Component {
   render() {
     return(  <div>
 
-      <h1 className="bug rainbow">"WEATHER BUG"</h1>
-     <p className="weatherinfo rainbow">Find Out The Temperature, Weather Conditons and More....</p>
+      <h1 className="bug">"WEATHER BUG"</h1>
+     <p className="weatherinfo">Find Out The Temperature, Weather Conditons and More....</p>
 
      <Form getWeather = {this. getWeather}/>
      <Weather
@@ -67,7 +67,6 @@ class App extends React.Component {
         weather news
         </Link>
       </button>
-
     </div>
   </div>
 )
