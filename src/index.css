@@ -21,7 +21,7 @@ text-shadow: 3px 2px #cc9298;
   text-align: center;
   font-size: 30px;
   text-shadow: 3px 2px black;
-  color:#4ec45a;
+  color:#ffff;
 }
 /*this is for yhr weather information below the search bar*/
 
@@ -171,5 +171,5 @@ Form{
 
   .headerStyle {
     background-color: blue;
-    
+
   }
