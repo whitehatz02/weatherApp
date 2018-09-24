@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Link } from "react-router-dom";
 import Form from "./components/form.js";
 import Weather from "./components/weather.js";
+import Navigation from "./components/NavBar.js";
 //import Videos from "./components/Videos.js"
 //import Links from "./components/Links.js"
 
@@ -61,13 +62,6 @@ class App extends React.Component {
        description= {this.state.description}
        error= {this.state.error}
        />
-     <div>
-      <button className="videos">
-        <Link to="/videos">
-        weather news
-        </Link>
-      </button>
-    </div>
   </div>
 )
 }
