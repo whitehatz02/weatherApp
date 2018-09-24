@@ -19,7 +19,7 @@ class Videos extends React.Component {
         frameborder="0"
         allow="autoplay; encrypted-media"
         allowfullscreen
-      />;
+      />
         <iframe
         width="400"
         height="330"
@@ -27,7 +27,7 @@ class Videos extends React.Component {
         frameborder="0"
         allow="autoplay; encrypted-media"
         allowfullscreen
-      />;
+      />
           <iframe
           width="400"
           height="330"
@@ -35,7 +35,7 @@ class Videos extends React.Component {
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen
-        />;
+        />
 
 
         </div>
@@ -47,7 +47,7 @@ class Videos extends React.Component {
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
-          />;
+          />
 
            <iframe
             width="400"
@@ -56,7 +56,7 @@ class Videos extends React.Component {
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
-          />;
+          />
             <iframe
               width="400"
               height="330"
@@ -64,7 +64,7 @@ class Videos extends React.Component {
               frameborder="0"
               allow="autoplay; encrypted-media"
               allowfullscreen
-              />;
+              />
 
 
 
