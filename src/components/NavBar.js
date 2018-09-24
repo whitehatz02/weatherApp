@@ -5,10 +5,10 @@ const Navigation = () => {
   return (
     <div>
     <nav className="headerStyle">
-      <ul>
-      <button type="button"><Link to="/"><strong>Home</strong></Link></button>
-    <button type="button"><Link to="/videos"><strong>Videos</strong></Link></button>
-      </ul>
+
+    <Link className="home" to="/"><strong>Home</strong></Link>
+    <Link className="video"to="/videos"><strong>Videos</strong></Link>
+
 
       </nav>
     </div>

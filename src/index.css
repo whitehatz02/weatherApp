@@ -11,7 +11,7 @@ h1{
   font-family: 'Tangerine', cursive;
   color:#a02b2b;
   //text-decoration: underline;
-text-shadow: 3px 2px #cc9298;
+text-shadow: 3px 2px #ff9900;
  font-style: oblique;
  font-size: 140px;
  text-align: center;
@@ -52,10 +52,10 @@ font-weight: bold;
   text-decoration: none;
   outline: none;
   color: black  ;
-  background-color: #357ab7;
+  background-color: #ff9900;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 6px #004684;
+  box-shadow: 0 6px #0c0c0b;
 }
 
 .btn:hover {background-color: #f7f7f7}
@@ -125,23 +125,33 @@ Form{
 
   /* Navigation bar */
 
-.headerStyle {
-    text-color: black;
-    background-color:#ff9900;
-    height: 30px;
-  }
+   /* this is modifying the letters of main menu buttons */
 
-.button p.thick {
-    font-weight: bold;
-}
+     .headerStyle {
+      overflow: hidden;
+      background-color:none;
+      border line: hidden;
+      margin-left:  75vw;
 
-.button:hover {
-   border-top-color: #28597a;
-   background: #28597a;
-   color: #ccc;
+
    }
+   /* this is modifying the letters of main menu buttons */
+   .headerStyle a {
+      float: left;
+      font-size: 30px;
+      color: brown;
+      text-shadow: 4px 4px 6px   #ff9900;
+      font-style: oblique;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
 
-.button:active {
-   border-top-color: #1b435e;
-   background: #1b435e;
+
+   }   
+
+   .home:active {
+     transform: translateY(4px);
+   }
+   .video:active {
+     transform: translateY(4px);
    }
