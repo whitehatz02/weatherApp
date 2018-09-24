@@ -63,8 +63,9 @@ class App extends React.Component {
        error= {this.state.error}
        />
   </div>
-)
-}
+    
+    )
+  }
 }
 
 export default App;

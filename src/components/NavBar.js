@@ -6,8 +6,8 @@ const Navigation = () => {
     <div>
     <nav className="headerStyle">
       <ul>
-      <button><Link to="/">Home</Link></button>
-      <button><Link to="/videos">Videos</Link></button>
+      <button type="button"><Link to="/"><strong>Home</strong></Link></button>
+    <button type="button"><Link to="/videos"><strong>Videos</strong></Link></button>
       </ul>
 
       </nav>
